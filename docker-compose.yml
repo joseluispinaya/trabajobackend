@@ -11,10 +11,10 @@ services:
       - consultorio_network
     environment:
       - DB_HOST=db
-      - DB_PORT=${DB_PORT}
-      - DB_NAME=${DB_NAME}
-      - DB_USER=${DB_USER}
-      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_PORT=5432
+      - DB_NAME=consultorio-pediatrico
+      - DB_USER=postgres
+      - DB_PASSWORD=D3v310p34*DF$
     depends_on:
       - db
 
@@ -35,9 +35,9 @@ services:
     container_name: consultorio-db
     restart: always
     environment:
-      POSTGRES_USER: ${DB_USER}
-      POSTGRES_PASSWORD: ${DB_PASSWORD}
-      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: D3v310p34*DF$
+      POSTGRES_DB: consultorio-pediatrico
     ports:
       - "5432:5432"
     networks:
