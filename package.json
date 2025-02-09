@@ -1,0 +1,27 @@
+{
+  "name": "consultorio-pediatrico",
+  "version": "0.1.0",
+  "description": "Manejo de Consultorio Pediatrico con varias espcialidades",
+  "keywords": [
+    "consultorio",
+    "pediatrico",
+    "nodejs",
+    "vueJS"
+  ],
+  "license": "ISC",
+  "author": "Grupo 7",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9",
+    "pg": "^8.13.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.5"
+  }
+}

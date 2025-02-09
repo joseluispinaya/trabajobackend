@@ -1,0 +1,166 @@
+{
+    "doctors": [
+      {
+        "id": 2,
+        "name": "Dra. María Gómez",
+        "specialty": "Neonatología",
+        "phone": "63524178",
+        "address": "Calle 21 de Calacoto #1254/Zona Sur - La Paz",
+        "email": "maria.gomez@consultorio.com"
+      },
+      {
+        "id": 3,
+        "name": "Dr. Jose Dominguez",
+        "specialty": "Neumología Pediátrica",
+        "phone": "74859641",
+        "address": "Calle los alamos #6547b/Zona Achumani - La Paz",
+        "email": "jose.dominguez@consultorio.com"
+      },
+      {
+        "id": 4,
+        "name": "Dra. Maria Illanes Campero",
+        "specialty": "Pediatría",
+        "phone": "74859641",
+        "address": "Calle Ballivian Edificio Torres Center Piso 7 #157b/Zona sur - La Paz",
+        "email": "maria.illanes@consultorio.com"
+      },
+      {
+        "id": 5,
+        "name": "Dra. Adela Zambrana",
+        "specialty": "Dermatología",
+        "phone": "68748596",
+        "address": "Calle Ingavi #365/Zona Central",
+        "email": "adela.zambrana@gmail.com"
+      },
+      {
+        "id": 6,
+        "name": "Dr. Isaac Alvarez",
+        "specialty": "Traumatología",
+        "phone": "74851263",
+        "address": "Av. Busch Edificio Los Cisnes piso 7 #47b Zona Miraflores",
+        "email": "issac.alvarez@gmail.com"
+      }
+    ],
+    "patients": [
+      {
+        "id": 2,
+        "name": "Ana Lopez",
+        "birthdate": "2021-01-26",
+        "gender": "Femenino",
+        "contact": "74859641"
+      },
+      {
+        "id": 3,
+        "name": "Yoel Dominguez",
+        "birthdate": "2018-06-13",
+        "gender": "Masculino",
+        "contact": "69854157"
+      },
+      {
+        "id": 4,
+        "name": "Fernando Valdivia",
+        "birthdate": "2019-02-02",
+        "gender": "Masculino",
+        "contact": "69857415"
+      },
+      {
+        "id": 5,
+        "name": "Rosa Montesinos",
+        "birthdate": "2017-10-13",
+        "gender": "Femenino",
+        "contact": "63987541"
+      },
+      {
+        "id": 6,
+        "name": "Michel Peres Solorzano",
+        "birthdate": "2024-02-10",
+        "gender": "Femenino",
+        "contact": "63587412"
+      },
+      {
+        "id": 7,
+        "name": "Daniela Aldunate",
+        "birthdate": "2023-12-20",
+        "gender": "Femenino",
+        "contact": "67854152"
+      },
+      {
+        "id": 8,
+        "name": "Andrea Rodriguez Lopes",
+        "birthdate": "2021-12-03",
+        "gender": "Femenino",
+        "contact": "65824138"
+      }
+    ],
+    "appointments": [
+      {
+        "id": 3,
+        "doctorId": 3,
+        "patientId": 2,
+        "date": "2024-12-23",
+        "time": "15:30"
+      },
+      {
+        "id": 4,
+        "doctorId": 4,
+        "patientId": 4,
+        "date": "2024-12-26",
+        "time": "11:00"
+      },
+      {
+        "id": 8,
+        "doctorId": 4,
+        "patientId": 6,
+        "date": "2024-12-24",
+        "time": "16:15"
+      },
+      {
+        "id": 9,
+        "doctorId": 2,
+        "patientId": 3,
+        "date": "2024-12-26",
+        "time": "08:48"
+      },
+      {
+        "id": 10,
+        "doctorId": 5,
+        "patientId": 5,
+        "date": "2024-12-24",
+        "time": "18:00"
+      },
+      {
+        "id": 11,
+        "doctorId": 5,
+        "patientId": 3,
+        "date": "2024-12-27",
+        "time": "09:00"
+      },
+      {
+        "id": 12,
+        "doctorId": 5,
+        "patientId": 8,
+        "date": "2024-12-27",
+        "time": "14:30"
+      }
+    ],
+    "consultations": [
+      {
+        "id": 1,
+        "doctorId": 3,
+        "patientId": 2,
+        "diagnosis": "Tos persistente con flemas en los pulmones.",
+        "treatment": "Nebulizaciones dos veces al día y aspersor cada 8 hrs, consulta a coordinar en 10 días.",
+        "date": "2024-12-23",
+        "time": "15:25"
+      },
+      {
+        "id": 4,
+        "doctorId": 4,
+        "patientId": 4,
+        "diagnosis": "Flemas en el pulmón derecho",
+        "treatment": "Jarabe amoxi duo 10%, cada 6 hrs durante 10 días, después control médico al 11avo día terminado el tratamiento médico.",
+        "date": "2024-12-24",
+        "time": "10:00"
+      }
+    ]
+}

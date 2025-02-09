@@ -1,0 +1,53 @@
+
+services:
+  # Servicio para el backend (Node.js)
+  backend:
+    image: galbino/consultorio-pediatrico:v0.1.2
+    container_name: backend-consultorio
+    restart: always
+    ports:
+      - "3000:3000"
+    networks:
+      - consultorio_network
+    environment:
+      - DB_HOST=db
+      - DB_PORT=${DB_PORT}
+      - DB_NAME=${DB_NAME}
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+    depends_on:
+      - db
+
+  # Servicio para el frontend (React, Angular, etc.)
+  frontend:
+    image: galbino/consultorio-pediatrico-frontend:v0.1.1
+    container_name: frontend-consultorio
+    restart: always
+    ports:
+      - "8080:80"
+    networks:
+      - consultorio_network
+    depends_on:
+      - backend
+
+  db:
+    image: postgres:16.6-alpine3.21
+    container_name: consultorio-db
+    restart: always
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+    ports:
+      - "5432:5432"
+    networks:
+      - consultorio_network
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+networks:
+  consultorio_network:
+    driver: bridge
+
+volumes:
+  pgdata:
